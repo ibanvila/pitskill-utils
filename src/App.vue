@@ -1,12 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+<!--  <nav>-->
+<!--    <router-link to="/">Home</router-link> |-->
+<!--    <router-link to="/about">About</router-link>-->
+<!--  </nav>-->
   <router-view/>
 </template>
 
 <style>
+@import 'bootstrap/dist/css/bootstrap.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
