@@ -29,4 +29,13 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.bg-class-red {
+  background-color: #b1222a;
+}
+
+.bg-class-gray {
+  background-color: #e0e0e0;
+}
+
 </style>
