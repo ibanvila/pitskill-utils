@@ -70,7 +70,7 @@ export default {
       loading: false, // To show a loading message
       error: null,
       eventName: '',
-      eventId: 'dee7bed6-520c-42b4-a075-e3aad4641a1a'
+      eventId: ''
     }
   },
   computed: {
@@ -82,7 +82,11 @@ export default {
       this.fetchEvent()
     },
     getClass (index) {
-      return index < 30 ? 'bg-success-subtle' : index < 35 ? 'bg-warning-subtle' : 'bg-danger-subtle'
+      if (this.eventName.includes('GT3 Elite')) {
+        return index < 30 ? 'bg-success-subtle' : index < 35 ? 'bg-warning-subtle' : 'bg-danger-subtle'
+      } else {
+        return ''
+      }
     },
     async fetchNameSurname (userId) {
       try {
